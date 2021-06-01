@@ -1,0 +1,2 @@
+* 각 나라에 있는 사무실의 위치를 출력하기 위해 countries 와 locations table을 이용하여 
+country_id, country_name, city, street_address을 출력하시오.
