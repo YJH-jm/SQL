@@ -61,7 +61,7 @@ details {padding : 1rem; white-space: pre-wrap;}
 </div>
 
 <div class=question id=Q3>
-      <h4>3. EMPLOYEES table에서 보너스(COMMISSION_PCT)를 받을 수 있는 직원의 이름(FIRST_NAME)과 성(LAST_NAME), 월급여(SALARY)와 보너스(SALARY*COMMISSION_PCT)를 출력하시오.</h4>
+      <h4>3. EMPLOYEES table에서 보너스(COMMISSION_PCT)를 받을 수 있는 직원의 이름(FIRST_NAME)과 성(LAST_NAME), 월급여(SALARY)와 보너스(SALARY*COMMISSION_PCT)를 보너스를 기준으로 오름차순으로 출력하시오.</h4>
       <details><summary>모범 답안</summary>
             <strong>select</strong> FIRST_NAME as 이름, LAST_NAME as 성, SALARY as 월급여, SALARY*COMMISSION_PCT as 보너스
             <strong>from</strong> EMPLOYEES 
@@ -109,7 +109,7 @@ details {padding : 1rem; white-space: pre-wrap;}
 </div>
 
 <div class=question id=Q4>
-      <h4>4. JOBS table에서 직책(JOB_TITLE)별 최소월급(MIN_SALARY)과 최대월급(MAX_SALARY), 그리고 평균월급을 구하고 금액의 단위를 $(달러)로 출력하시오.</h4>
+      <h4>4. JOBS table에서 직책(JOB_TITLE)별 최소월급(MIN_SALARY)과 최대월급(MAX_SALARY), 그리고 평균월급을 구하고 금액의 단위를 $(달러)로 평균월급을 기준으로 내림차순으로 출력하시오.</h4>
       <details><summary>모범 답안</summary>
             <strong>select</strong> JOB_TITLE as 직책, to_char(MIN_SALARY, '$9999,99') as 최소월급, to_char((MIN_SALARY+MAX_SALARY)/2, '$9999,99') as 평균월급, to_char(MAX_SALARY, '$9999,99') as 최대월급
             <strong>from</strong> JOBS
